@@ -1,0 +1,10 @@
+{
+  "name": {
+    "message": "Video Controller Extension",
+    "description": "extension name"
+  },
+  "description": {
+    "message": "By EndeZz",
+    "description": "extension description"
+  }
+}
