@@ -4,10 +4,10 @@ export const onMouseEnterEvent = (
   buttonElement: HTMLButtonElement,
   videoElement: HTMLVideoElement,
 ) => {
+  const handleWheel = (event: WheelEvent) => changeVideoSpeed(event, videoElement)
+
   buttonElement.addEventListener('mouseenter', () => {
-    buttonElement.addEventListener('wheel', (event: WheelEvent) => {
-      changeVideoSpeed(event, videoElement)
-    })
+    buttonElement.addEventListener('wheel', handleWheel)
   })
 }
 
@@ -15,9 +15,9 @@ export const onMouseLeaveEvent = (
   buttonElement: HTMLButtonElement,
   videoElement: HTMLVideoElement,
 ) => {
+  const handleWheel = (event: WheelEvent) => changeVideoSpeed(event, videoElement)
+
   buttonElement.addEventListener('mouseleave', () => {
-    buttonElement.removeEventListener('wheel', (event: WheelEvent) => {
-      changeVideoSpeed(event, videoElement)
-    })
+    buttonElement.removeEventListener('wheel', handleWheel)
   })
 }
