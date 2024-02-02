@@ -13,6 +13,7 @@
   "devDependencies": {
     "@crxjs/vite-plugin": "2.0.0-beta.21",
     "@types/chrome": "0.0.254",
+    "@types/node": "20.11.16",
     "@typescript-eslint/eslint-plugin": "6.16.0",
     "@typescript-eslint/parser": "6.16.0",
     "eslint": "8.56.0",
